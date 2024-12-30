@@ -1,0 +1,81 @@
+Hoja de trucos del DOM
+
+1. Seleccionar Elementos
+
+Método	Descripción
+document.getElementById(id)	Selecciona un elemento por su ID.
+document.getElementsByTagName(name)	Selecciona elementos por su nombre de etiqueta.
+document.getElementsByClassName(name)	Selecciona elementos por su clase.
+document.querySelector(selector)	Selecciona el primer elemento que coincide con el selector CSS.
+document.querySelectorAll(selector)	Selecciona todos los elementos que coinciden con el selector CSS.
+
+2. Trabajar con Elementos
+
+Propiedad/Método	Descripción
+element.innerHTML	Obtiene o establece el HTML interno.
+element.outerHTML	Obtiene o establece el HTML incluyendo el elemento mismo.
+element.textContent	Obtiene o establece el texto interno.
+element.attributes	Devuelve un objeto con todos los atributos del elemento.
+element.setAttribute(name, value)	Establece un nuevo valor para un atributo.
+element.getAttribute(name)	Obtiene el valor de un atributo.
+element.removeAttribute(name)	Elimina un atributo.
+
+3. Crear y Eliminar Elementos
+
+Método	Descripción
+document.createElement(tagName)	Crea un nuevo elemento.
+document.createTextNode(data)	Crea un nuevo nodo de texto.
+parent.appendChild(child)	Añade un nuevo hijo al elemento padre.
+parent.removeChild(child)	Elimina un hijo del elemento padre.
+parent.replaceChild(newChild, oldChild)	Reemplaza un hijo por otro en el elemento padre.
+
+4. Clases, ID y Estilos
+
+Propiedad/Método	Descripción
+element.classList	Devuelve una lista de las clases.
+element.classList.add(className)	Añade una clase.
+element.classList.remove(className)	Elimina una clase.
+element.classList.toggle(className)	Alterna una clase.
+element.id	Obtiene o establece el ID del elemento.
+element.style	Accede o establece el estilo en línea del elemento.
+
+5. Eventos
+
+Método	Descripción
+element.addEventListener(event, handler)	Añade un escuchador de eventos.
+element.removeEventListener(event, handler)	Elimina un escuchador de eventos.
+event.preventDefault()	Impide que se ejecute la acción predeterminada.
+event.stopPropagation()	Detiene la propagación del evento.
+
+6. Propiedades de Navegación y Nodo
+
+Propiedad	Descripción
+element.childNodes	Devuelve una colección de nodos hijos.
+element.firstChild	Devuelve el primer nodo hijo.
+element.lastChild	Devuelve el último nodo hijo.
+element.nextSibling	Devuelve el siguiente nodo hermano.
+element.previousSibling	Devuelve el anterior nodo hermano.
+element.parentNode	Devuelve el nodo padre.
+
+7. Manipulación de Dimensiones y Posicionamiento
+
+Método	Descripción
+element.getBoundingClientRect()	Devuelve el tamaño del elemento y su posición relativa a la ventana gráfica.
+window.scrollBy(x, y)	Desplaza la ventana por una cierta cantidad de píxeles.
+window.scrollTo(x, y)	Desplaza la ventana a una ubicación específica.
+
+8. Control de la Visualización
+
+Propiedad	Descripción
+element.style.display	Obtiene o establece la propiedad de visualización CSS.
+element.style.visibility	Obtiene o establece la propiedad de visibilidad CSS.
+element.style.opacity	Obtiene o establece la propiedad de opacidad CSS.
+
+9. Trabajo con Atributos de Datos (Data Attributes)
+
+Propiedad	Descripción
+element.dataset	Permite acceso a los atributos de datos personalizados (data-*) en un elemento.
+10. Manipulación del Documento
+Método	Descripción
+document.write(html)	Escribe HTML en un documento.
+document.execCommand(command)	Ejecuta un comando en el contenido editable actual.
